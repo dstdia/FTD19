@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Paint the Asset, please!</description>
+    <fieldOverrides>
+        <field>Color__c</field>
+        <formula>&quot;Shabby old paint&quot;</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>PaintJobs__c</field>
+        <formula>0</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>WorkLog__c</field>
+        <formula>&quot;*** old color ***&quot;</formula>
+    </fieldOverrides>
+    <label>Paint... again!</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Name</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns/>
+    </quickActionLayout>
+    <successMessage>Successfully painted!</successMessage>
+    <type>Update</type>
+</QuickAction>

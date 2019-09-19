@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Dark_Green</fullName>
+        <field>WorkflowPaint__c</field>
+        <literalValue>DarkGreen</literalValue>
+        <name>Dark Green</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Dark_Red</fullName>
+        <field>WorkflowPaint__c</field>
+        <literalValue>DarkRed</literalValue>
+        <name>Dark Red</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>LightGreen</fullName>
+        <field>WorkflowPaint__c</field>
+        <literalValue>LightGreen</literalValue>
+        <name>LightGreen</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>LightRed</fullName>
+        <field>WorkflowPaint__c</field>
+        <literalValue>LightRed</literalValue>
+        <name>LightRed</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>DoorBellOne</fullName>
+        <actions>
+            <name>LightGreen</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>LightRed</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>The first doorbell</description>
+        <formula>OR(ISNEW(),ISCHANGED(LastModifiedDate))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>DoorBellTwo</fullName>
+        <actions>
+            <name>Dark_Green</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Dark_Red</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>The second door bell</description>
+        <formula>OR(ISNEW(),ISCHANGED(LastModifiedDate))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

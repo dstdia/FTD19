@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#52A9E7</headerColor>
+        <logo>FTD128</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Order of Execution Session</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>French Touch Dreamin&#39; 19</label>
+    <navType>Standard</navType>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>standard-Asset</tabs>
+    <tabs>Door__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>French_Touch_Dreamin_19_UtilityBar</utilityBar>
+</CustomApplication>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Paintjob_must_not_be_blue</fullName>
+    <active>true</active>
+    <description>I really don&#39;t like the Rolling Stones, therefore the door must never be painted black!</description>
+    <errorConditionFormula>Color__c = &quot;Process Black&quot;</errorConditionFormula>
+    <errorDisplayField>Color__c</errorDisplayField>
+    <errorMessage>The paint job must never be done in blue!</errorMessage>
+</ValidationRule>
