@@ -4,10 +4,6 @@
         <application>FTD19</application>
         <visible>true</visible>
     </applicationVisibilities>
-    <applicationVisibilities>
-        <application>SampleAppUnifiedLogging</application>
-        <visible>true</visible>
-    </applicationVisibilities>
     <description>Permission for the French Touch Dreamin&#39; demo</description>
     <fieldPermissions>
         <editable>true</editable>
@@ -49,15 +45,6 @@
         <modifyAllRecords>true</modifyAllRecords>
         <object>Door__c</object>
         <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>false</allowDelete>
-        <allowEdit>false</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
-        <object>Log__e</object>
-        <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <tabSettings>
         <tab>Door__c</tab>
